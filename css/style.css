@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+.hero{
+    background-image: url("/imgs/background.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    position: sticky;
+    background-color: rgb(243, 242, 253);
+}
+
+.logo{
+    width: 10%;
+    /* height: 1vh; */
+    margin: .5%;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo img{
+    max-width: 100%;
+    height: auto;
+}
+
+.nav2 li {
+    text-decoration: none;
+    align-self: center;
+    
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+}
+.nav2 li a{
+    text-decoration: none;
+    color: #282C3F;
+    font-weight: 800; 
+}
+.nav2 li a:hover{
+    transition: ease-out .2s;
+    color: #FF7A03;
+}
+
+.navHover {
+    background-color: #282C3F;
+    width: 22%;
+    border-radius: 25px;
+    opacity: 1;
+    
+}
+.navHover:hover {
+    transition:ease-out .2s;
+    opacity: 0.8;
+
+}
+.navHover a{
+    font-weight: 500;
+}
