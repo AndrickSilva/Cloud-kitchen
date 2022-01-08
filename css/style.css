@@ -8,9 +8,9 @@
     font-family: 'Lato', sans-serif;
 }
 
-.hero{
+.main{
     background-image: url("/imgs/background.jpg");
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,7 +26,6 @@
 
 .logo{
     width: 10%;
-    /* height: 1vh; */
     margin: .5%;
     align-self: center;
     background-repeat: no-repeat;
@@ -42,7 +41,7 @@
     text-decoration: none;
     align-self: center;
     
-    padding: 10px 20px;
+    padding: 2% 20px;
     margin: 8px 0;
     display: inline-block;
 }
@@ -50,6 +49,7 @@
     text-decoration: none;
     color: #282C3F;
     font-weight: 800; 
+    font-size: 100%;
 }
 .nav2 li a:hover{
     transition: ease-out .2s;
@@ -58,7 +58,6 @@
 
 .navHover {
     background-color: #282C3F;
-    width: 22%;
     border-radius: 25px;
     opacity: 1;
     
@@ -70,4 +69,79 @@
 }
 .navHover a{
     font-weight: 500;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(3,1fr);
+    width: 100%;
+    height: 100vh;
+}
+
+.first{
+    grid-column: 2 ;
+    width: 50%;
+    background-repeat: no-repeat;
+    justify-self: center;
+    align-self: center;
+}
+
+.first img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.second{
+    width: 60%;
+    height: 60%;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.second h2{
+    text-align: center;
+    color: #282C3F;
+    font-size: 150%;
+}
+
+.third{
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+    width: 60%;
+    height: 95%;
+    background-color: #EEF8F9;
+    border-radius: 5px;
+}
+
+.third h1{
+    text-align: center;
+    color: #282C3F;
+    margin-top: 25px;
+    font-size: 200%;
+}
+
+.input_pincode{
+    padding: 10%;
+    height: auto;
+    text-align: center;
+}
+
+.input1{
+    padding: 5px 20px;
+    border:1px solid #ccc;
+    background: url("/imgs/location.png") no-repeat right;
+    background-size: 15px;
+    
+}
+
+.btn{
+    padding: 5px;
+    border:1px solid #ccc;
+    background-color: #FF7A03;
+    color: #fff;
+    font-weight: 600;
 }
