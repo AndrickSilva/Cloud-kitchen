@@ -12,7 +12,7 @@
 
 .main {
   background-image: url("../imgs/background1.jpg");
-  max-width: 100%;
+  max-width: 100vw;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@
 }
 
 .logo {
-  width: 10%;
+  width: 100px;
   margin: 0.5%;
   align-self: center;
   background-repeat: no-repeat;
@@ -84,6 +84,14 @@
 .s-text {
   font-size: 1.5rem;
   font-family: "Catamaran", sans-serif;
+  font-weight: 500;
+
+}
+
+.test-1{
+  position: relative;
+  width: 25rem;
+  bottom: 40px;
 }
 
 .orange{
