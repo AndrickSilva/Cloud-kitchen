@@ -85,17 +85,16 @@
   font-size: 1.5rem;
   font-family: "Catamaran", sans-serif;
   font-weight: 500;
-
 }
 
-.test-1{
+.test-1 {
   position: relative;
-  width: 25rem;
+  min-width: 1rem;
   bottom: 40px;
 }
 
-.orange{
-    color: #ff7a03;
+.orange {
+  color: #ff7a03;
 }
 
 .first {
@@ -125,37 +124,36 @@
   align-self: center;
 }
 
-.h-button{
-    padding: 15px;
-    border: none;
-    font-size: 15px;
-    font-weight: 600;
-    margin:20px 2px;
-    background-color: rgb(243, 243, 243);
+.h-button {
+  padding: 15px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 20px 2px;
+  background-color: rgb(243, 243, 243);
 }
 
-.b1{
-    border-radius: 15px 0 0 0;
-    color: aliceblue;
-    background-color: #ff7a03;
+.b1 {
+  border-radius: 15px 0 0 0;
+  color: aliceblue;
+  background-color: #ff7a03;
 }
-.b1:hover{
-    border-radius: 15px 0 0 0;
-    background-color: aliceblue;
-    color: #ff7a03;
-    transition: ease-out 0.3s;
-}
-
-.b2{
-    border-radius: 0 0 15px 0;
-    color: #ff7a03;
+.b1:hover {
+  border-radius: 15px 0 0 0;
+  background-color: aliceblue;
+  color: #ff7a03;
+  transition: ease-out 0.3s;
 }
 
-.b2:hover{
-    
-    color: aliceblue;
-    background-color: #ff7a03;
-    transition: ease-out 0.3s;
+.b2 {
+  border-radius: 0 0 15px 0;
+  color: #ff7a03;
+}
+
+.b2:hover {
+  color: aliceblue;
+  background-color: #ff7a03;
+  transition: ease-out 0.3s;
 }
 /* .second h2 {
   text-align: center;
@@ -201,3 +199,32 @@
   color: #fff;
   font-weight: 600;
 } */
+.cards-container {
+  background-color: #282c3f;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card:hover{
+  box-shadow: #ff7a03 0px 2px 8px;
+}
+
+  .card-h2 {
+    margin: 7px 0;
+}
+
+.card-p {
+  text-align: center;
+}
