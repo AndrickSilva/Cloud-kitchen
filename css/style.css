@@ -85,12 +85,15 @@
   font-size: 1.5rem;
   font-family: "Catamaran", sans-serif;
   font-weight: 500;
+  width: 20.5rem;
 }
 
 .test-1 {
-  position: relative;
-  min-width: 1rem;
   bottom: 40px;
+}
+
+.btn-container {
+  width: max-content;
 }
 
 .orange {
@@ -131,18 +134,17 @@
   font-weight: 600;
   margin: 20px 2px;
   background-color: rgb(243, 243, 243);
+  transition: ease-out 0.3s;
+  border-radius: 15px 0 0 0;
 }
 
 .b1 {
-  border-radius: 15px 0 0 0;
   color: aliceblue;
   background-color: #ff7a03;
 }
 .b1:hover {
-  border-radius: 15px 0 0 0;
   background-color: aliceblue;
   color: #ff7a03;
-  transition: ease-out 0.3s;
 }
 
 .b2 {
@@ -153,7 +155,6 @@
 .b2:hover {
   color: aliceblue;
   background-color: #ff7a03;
-  transition: ease-out 0.3s;
 }
 /* .second h2 {
   text-align: center;
@@ -218,14 +219,24 @@
   transition: 0.3s;
 }
 
-.card:hover{
+.card:hover {
   box-shadow: #ff7a03 0px 2px 8px;
 }
 
-  .card-h2 {
-    margin: 7px 0;
+.card-h3 {
+  margin: 7px 0;
+  text-align: center;
 }
 
 .card-p {
   text-align: center;
+}
+
+/* 640 */
+@media screen and (max-width: 640px) {
+
+  .cards-container {
+    /* display: flex; */
+    flex-direction: column;
+  }
 }
