@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./imgs/logo.png" type="image/icon type">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Cloud-kitchen - Home</title>
 </head>
 
@@ -55,39 +56,48 @@
 
     </div>
     <section class="cards-container">
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
             <img src="./imgs/thumb up.png" alt="thumb" height="100px" width="100px">
             <h3 class="card-h3">No Minimum Order</h3>
             <p class="card-p">Order in for yourself or for the group, with no restrictions on order value</p>
         </div>
-        <div class="card">
-            <img src="./imgs/tracking.png" alt="thumb" height="100px" width="100px">
+        <div class="card" data-aos="zoom-in">
+            <img src="./imgs/tracking.png" alt="thumb" height="100px" width="100px" >
             <h3 class="card-h3">Live Order Tracking</h3>
             <p class="card-p">Know where your order is at all times, from the restaurant to your doorstep</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
             <img src="./imgs/delivery boy.png" alt="thumb" height="100px" width="100px">
             <h3 class="card-h3">Lightning-Fast Delivery</h3>
             <p class="card-p">Experience foodie's superfast delivery for food delivered fresh & on time</p>
         </div>
     </section>
     <section class="second-cards-container">
-        <div class="second-cards">
+        <div class="second-cards" data-aos="fade-up" data-aos-duration="1000">
             <img class="second-cards-img" src="./imgs/card1.jpg" alt="" >
             <h2 class="second-cards-h2">Order food online</h2>
             <button class="second-cards-btn" type="submit">Order Now</button>
         </div>
-        <div class="second-cards">
+        <div class="second-cards" data-aos="fade-up" data-aos-duration="1000">
             <img class="second-cards-img" src="./imgs/card2.png" alt="" >
             <h2 class="second-cards-h2">Go out for a meal</h2>
             <button class="second-cards-btn" type="submit">Book Now</button>
         </div>
-        <div class="second-cards">
+        <div class="second-cards" data-aos="fade-up" data-aos-duration="1000">
             <img class="second-cards-img" src="./imgs/card3.png" alt="" >
             <h2 class="second-cards-h2" >Night life & Clbs</h2>
             <button class="second-cards-btn" type="submit">check Now</button>
         </div>
     </section>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
