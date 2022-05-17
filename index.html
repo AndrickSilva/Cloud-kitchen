@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/logo.png" type="image/icon type">
+    <link rel="icon" href="./imgs/logo.png" type="image/icon type">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Cloud-kitchen - Home</title>
 </head>
 
@@ -30,15 +32,17 @@
         <div class="main">
             <div class="container">
                 <div class="first">
-                    <p class="s-text">Easy way to order your food</p>
+                    <!-- <p class="s-text">Easy way to order your food</p> -->
 
                     <h2 class="hero-text">Order healthy&<br> fresh food</h2>
                     <h2 class="hero-text orange">Anytime!</h2>
                 </div>
                 <div class="second">
-                    <h2 class="s-text">Just confirm your order and enjoy our delisious fast delivery</h2>
-                    <button class="h-button b1" type="submit">Order now</button>
-                    <button class="h-button b2" type="submit">See menu</button>
+                    <h2 class="s-text test-1">Just confirm your order and enjoy our delicious fast delivery</h2>
+                    <div class="btn-container">
+                        <button class="h-button b1" type="submit">Order now</button>
+                        <button class="h-button b2" type="submit">See menu</button>
+                    </div>
                 </div>
                 <!-- <div class="third">
                     <h1>Hungry?</h1>
@@ -52,6 +56,49 @@
         </div>
 
     </div>
+    <section class="cards-container">
+        <div class="card" data-aos="zoom-in">
+            <img src="./imgs/thumb up.png" alt="thumb" height="100px" width="100px">
+            <h3 class="card-h3">No Minimum Order</h3>
+            <p class="card-p">Order in for yourself or for the group, with no restrictions on order value</p>
+        </div>
+        <div class="card" data-aos="zoom-in">
+            <img src="./imgs/tracking.png" alt="thumb" height="100px" width="100px" >
+            <h3 class="card-h3">Live Order Tracking</h3>
+            <p class="card-p">Know where your order is at all times, from the restaurant to your doorstep</p>
+        </div>
+        <div class="card" data-aos="zoom-in">
+            <img src="./imgs/delivery boy.png" alt="thumb" height="100px" width="100px">
+            <h3 class="card-h3">Lightning-Fast Delivery</h3>
+            <p class="card-p">Experience foodie's superfast delivery for food delivered fresh & on time</p>
+        </div>
+    </section>
+    <section class="second-cards-container">
+        <div class="second-cards" data-aos="fade-up" data-aos-duration="1000">
+            <img class="second-cards-img" src="./imgs/card1.jpg" alt="" >
+            <h2 class="second-cards-h2">Order food online</h2>
+            <button class="second-cards-btn" type="submit">Order Now</button>
+        </div>
+        <div class="second-cards" data-aos="fade-up" data-aos-duration="1000">
+            <img class="second-cards-img" src="./imgs/card2.png" alt="" >
+            <h2 class="second-cards-h2">Go out for a meal</h2>
+            <button class="second-cards-btn" type="submit">Book Now</button>
+        </div>
+        <div class="second-cards" data-aos="fade-up" data-aos-duration="1000">
+            <img class="second-cards-img" src="./imgs/card3.png" alt="" >
+            <h2 class="second-cards-h2" >Night life & Clubs</h2>
+            <button class="second-cards-btn" type="submit">check Now</button>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
