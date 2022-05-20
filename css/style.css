@@ -10,6 +10,11 @@
   /* font-family: 'Open Sans', sans-serif; */
 }
 
+:root{
+  --orange: #ff7a03;
+  --primary: #282c3f;
+}
+
 .main {
   background-image: url("../imgs/background1.jpg");
   max-width: 100vw;
@@ -52,17 +57,17 @@
 }
 .nav2 li a {
   text-decoration: none;
-  color: #282c3f;
+  color: var(--primary);
   font-weight: 500;
   font-size: medium;
 }
 .nav2 li a:hover {
   transition: ease-out 0.2s;
-  color: #ff7a03;
+  color: var(--orange);
 }
 
 .navHover {
-  background-color: #282c3f;
+  background-color: var(--primary);
   border-radius: 25px;
   opacity: 1;
 }
@@ -99,7 +104,7 @@
 }
 
 .orange {
-  color: #ff7a03;
+  color: var(--orange);
 }
 
 .first {
@@ -142,21 +147,21 @@
 
 .b1 {
   color: aliceblue;
-  background-color: #ff7a03;
+  background-color: var(--orange);
 }
-.b1:hover {
+/* .b1:hover {
   background-color: aliceblue;
-  color: #ff7a03;
-}
+  color: var(--orange);
+} */
 
 .b2 {
   border-radius: 0 0 15px 0;
-  color: #ff7a03;
+  color: var(--orange);
 }
 
 .b2:hover {
   color: aliceblue;
-  background-color: #ff7a03;
+  background-color: var(--orange);
 }
 /* .second h2 {
   text-align: center;
@@ -203,7 +208,7 @@
   font-weight: 600;
 } */
 .cards-container {
-  background-color: #282c3f;
+  background-color: var(--primary);
   color: #fff;
   display: flex;
   justify-content: space-evenly;
@@ -222,7 +227,7 @@
 }
 
 .card:hover {
-  box-shadow: #ff7a03 0px 2px 8px;
+  box-shadow: var(--orange) 0px 2px 8px;
 }
 
 .card-h3 {
@@ -253,7 +258,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #282c3f;
+  background-color: var(--primary);
   border-radius: 24px;
 }
 
@@ -281,29 +286,15 @@
   font-weight: 900;
   font-size: 0.95em;
   cursor: pointer;
-  background: rgb(156, 190, 212);
-  background: linear-gradient(
-    90deg,
-    rgba(156, 190, 212, 1) 0%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(156, 190, 212, 1) 100%
-  );
+  background: rgb(255, 255, 255);
   opacity: 1;
-  /* transition: all 1s;    fix */
+  transition: ease-in-out .2s;   
 }
 
 
 
 .second-cards-btn:hover {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(156, 190, 212, 1) 50%,
-    rgba(255, 255, 255, 1) 100%
-    );
-    opacity: 0.9;
-    color: #282c3f;
+    opacity: 0.7;
 }
 
 /* 640 */
