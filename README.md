@@ -1,6 +1,6 @@
 # Cloud-kitchen
 
-# [Live preview](https://andricksilva.github.io/Cloud-kitchen/)
+### [Live preview](https://andricksilva.github.io/Cloud-kitchen/)
 
 <br>
 
