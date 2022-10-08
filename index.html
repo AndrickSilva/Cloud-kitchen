@@ -1,489 +1,232 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&family=Roboto:wght@300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300&family=Open+Sans:wght@400;500;800&display=swap");
+<!DOCTYPE html>
+<html lang="en">
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  /* font-family: 'Open Sans', sans-serif; */
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imgs/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/favicon.png" type="image/icon type">
+    <title>Cloud-kitchen - Home</title>
+</head>
 
-:root{
-  --orange: #ff7a03;
-  --primary: #282c3f;
-  --head-blue: #31364E;
-  --grey-text: #868686;
-  --bg: #EDEEF4;
-  --footer-bg: #F8F8F8;
-}
+<body>
+    <div class="hero">
+        <nav class="nav">
+            <div class="logo"><a href="#"><img src="./imgs/Group 1.svg"></a></div>
 
-.blue{
-  color: var(--head-blue);
-  font-size: 2.4rem;
-  font-family: "Catamaran", sans-serif;
-  font-weight: 800;
-  margin-top: 6rem;
-}
+            <ul class="nav2">
+                <li><a href="#">Get the app</a></li>
 
-.main {
-  background-image: url("../imgs/background1.jpg");
-  max-width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+                <li><a href="#">Explore</a></li>
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 12px;
-  top: 0;
-  position: sticky;
-  background-color: rgb(243, 242, 253);
-  font-family: "Roboto", sans-serif;
-  font-size: medium;
-}
+                <li><a href="#">Sign up</a></li>
 
-.logo {
-  width: 100px;
-  margin: 0.5%;
-  align-self: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+                <li class="navHover"><a href="#" style="color: #fff;">Sign In</a></li>
+            </ul>
 
-.logo img {
-  max-width: 100%;
-  height: auto;
-}
+        </nav>
 
-.nav2 li {
-  text-decoration: none;
-  align-self: center;
+        <div class="main">
+            <div class="container">
+                <div class="first">
+                    <!-- <p class="s-text">Easy way to order your food</p> -->
 
-  padding: 2% 15px;
-  margin: 8px 0;
-  display: inline-block;
-}
-.nav2 li a {
-  text-decoration: none;
-  color: var(--primary);
-  font-weight: 500;
-  font-size: medium;
-}
-.nav2 li a:hover {
-  transition: ease-out 0.2s;
-  color: var(--orange);
-}
+                    <h2 class="hero-text">Order healthy&<br> fresh food</h2>
+                    <h2 class="hero-text orange">Anytime!</h2>
+                </div>
+                <div class="second">
+                    <h2 class="s-text test-1">Just confirm your order and enjoy our delicious fast delivery</h2>
+                    <div class="btn-container">
+                        <button class="h-button b1" type="submit">Order now</button>
+                        <button class="h-button b2" type="submit">See menu</button>
+                    </div>
+                </div>
+                <!-- <div class="third">
+                    <h1>Hungry?</h1>
+                    <div class="input_pincode">
+                        <input class="input1" type="text" name="pincode" id="">
+                        <input class="btn" type="button" value="Find food">
+                    </div>
+                </div> -->
 
-.navHover {
-  background-color: var(--primary);
-  border-radius: 25px;
-  opacity: 1;
-}
-.navHover:hover {
-  transition: ease-out 0.2s;
-  opacity: 0.8;
-}
-.navHover a {
-  font-weight: 500;
-}
+            </div>
+        </div>
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  width: 100%;
-  height: 100vh;
-}
-.s-text {
-  font-size: 1.5rem;
-  font-family: "Catamaran", sans-serif;
-  font-weight: 500;
-  width: 20.5rem;
-}
+    </div>
 
-.test-1 {
-  position: relative;
-  top: -35px;
-  bottom: 40px;
-}
+    <section class="cards-container">
+        <div class="card" data-aos="zoom-in">
+            <img src="./imgs/thumb up.png" alt="thumb" height="100px" width="100px">
+            <h3 class="card-h3">No Minimum Order</h3>
+            <p class="card-p">Order in for yourself or for the group, with no restrictions on order value</p>
+        </div>
+        <div class="card" data-aos="zoom-in">
+            <img src="./imgs/tracking.png" alt="thumb" height="100px" width="100px">
+            <h3 class="card-h3">Live Order Tracking</h3>
+            <p class="card-p">Know where your order is at all times, from the restaurant to your doorstep</p>
+        </div>
+        <div class="card" data-aos="zoom-in">
+            <img src="./imgs/delivery boy.png" alt="thumb" height="100px" width="100px">
+            <h3 class="card-h3">Lightning-Fast Delivery</h3>
+            <p class="card-p">Experience foodie's superfast delivery for food delivered fresh & on time</p>
+        </div>
+    </section>
 
-.btn-container {
-  width: max-content;
-}
+    <section class="second-cards-container">
+        <div class="second-cards" data-aos="fade-up" data-aos-duration="1000">
+            <img class="second-cards-img" src="./imgs/card1.jpg" alt="">
+            <h2 class="second-cards-h2">Order food online</h2>
+            <button class="second-cards-btn" type="submit">Order Now</button>
+        </div>
+        <div class="second-cards" data-aos="fade-up" data-aos-duration="1000">
+            <img class="second-cards-img" src="./imgs/card2.png" alt="">
+            <h2 class="second-cards-h2">Go out for a meal</h2>
+            <button class="second-cards-btn" type="submit">Book Now</button>
+        </div>
+        <div class="second-cards" data-aos="fade-up" data-aos-duration="1000">
+            <img class="second-cards-img" src="./imgs/card3.png" alt="">
+            <h2 class="second-cards-h2">Night life & Clubs</h2>
+            <button class="second-cards-btn" type="submit">check Now</button>
+        </div>
+    </section>
 
-.orange {
-  color: var(--orange);
-}
+    <section class="rest-info">
+        <div class="top-rest-container">
+            <h1 class="blue">Top Restaurant Chains</h1>
+            <div class="top-rest">
+                <div class="menu">
 
-.first {
-  grid-column: 1;
-  width: 65%;
-  background-repeat: no-repeat;
-  justify-self: center;
-  align-self: center;
-}
+                    <span>Dominos</span>
+                    <span>McDonald’s</span>
+                    <span>Paradise Biryani</span>
+                    <span>Subway</span>
+                    <span>KFC</span>
+                </div>
+                <div class="menu">
 
-.hero-text {
-  font-family: "Roboto", sans-serif;
-  font-size: 4.125rem;
-}
+                    <span>WOW! momo</span>
+                    <span>Dunkin ‘ Donuts</span>
+                    <span>Fassoc</span>
+                    <span>Haldiram’s</span>
+                    <span>Behroz Biryani</span>
+                </div>
+            </div>
 
-.first img {
-  max-width: 100%;
-  height: auto;
-}
+            <h1 class="blue">Cities We Deliver To</h1>
+            <div class="top-rest">
+                <div class="menu">
 
-.second {
-  width: 65%;
-  height: 60%;
-  grid-column: 1;
-  grid-row: 2;
-  justify-self: center;
-  align-self: center;
-}
+                    <span>Goa</span>
+                    <span>Kolkata</span>
+                    <span>Maharashtra</span>
+                    <span>Karnataka</span>
+                    <span>Kochi</span>
+                </div>
+                <div class="menu">
 
-.h-button {
-  padding: 15px;
-  border: none;
-  font-size: 15px;
-  font-weight: 600;
-  margin: 20px 2px;
-  background-color: rgb(243, 243, 243);
-  transition: ease-out 0.3s;
-  border-radius: 15px 0 0 0;
-  cursor: pointer;
-}
+                    <span>Kerela</span>
+                    <span>Agra</span>
+                    <span>Leh</span>
+                    <span>Kota</span>
+                    <span>Patan</span>
+                </div>
 
-.b1 {
-  color: aliceblue;
-  background-color: var(--orange);
-}
-/* .b1:hover {
-  background-color: aliceblue;
-  color: var(--orange);
-} */
+                <div class="menu">
+                    <span>Maharashtra</span>
+                    <span>Karnataka</span>
+                    <span>Kochi</span>
+                    <span>Goa</span>
+                    <span>Kolkata</span>
+                </div>
 
-.b2 {
-  border-radius: 0 0 15px 0;
-  color: var(--orange);
-}
+                <div class="menu">
+                    <span>Kerela</span>
+                    <span>Agra</span>
+                    <span>Leh</span>
+                    <span>Kota</span>
+                    <span>Patan</span>
+                </div>
 
-.b2:hover {
-  color: aliceblue;
-  background-color: var(--orange);
-}
-/* .second h2 {
-  text-align: center;
-  color: #282c3f;
-  font-size: 1.8rem;
-  font-family: "Catamaran", sans-serif;
-} */
+                <div class="menu ll dn">
+                    <span>Maharashtra</span>
+                    <span>Karnataka</span>
+                    <span>Kochi</span>
+                    <span>Goa</span>
+                    <span>Kolkata</span>
+                </div>
+                <div class="menu ll dn">
 
-/* .third {
-  grid-column: 1;
-  justify-self: center;
-  align-self: center;
-  width: 60%;
-  height: 95%;
-  background-color: #eef8f9;
-  border-radius: 5px;
-}
+                    <span>Goa</span>
+                    <span>Kolkata</span>
+                    <span>Maharashtra</span>
+                    <span>Karnataka</span>
+                    <span>Kochi</span>
+                </div>
 
-.third h1 {
-  text-align: center;
-  color: #282c3f;
-  margin-top: 25px;
-  font-size: 200%;
-}
-
-.input_pincode {
-  padding: 10%;
-  height: auto;
-  text-align: center;
-}
-
-.input1 {
-  padding: 5px 20px;
-  border: 1px solid #ccc;
-  background: url("../imgs/location.png") no-repeat right;
-  background-size: 15px;
-}
-
-.btn {
-  padding: 5px;
-  border: 1px solid #ccc;
-  background-color: #ff7a03;
-  color: #fff;
-  font-weight: 600;
-} */
-.cards-container {
-  background-color: var(--primary);
-  color: #fff;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.card {
-  width: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px;
-  padding: 20px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  box-shadow: var(--orange) 0px 2px 8px;
-}
-
-.card-h3 {
-  font-family: "Catamaran", sans-serif;
-  margin: 7px 0;
-  text-align: center;
-}
-
-.card-p {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-
-  /* font-family: "Catamaran", sans-serif; */
-}
-
-.second-cards-container {
-  width: 98vw;
-  height: 70vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: var(--bg)
-}
-
-.second-cards {
-  width: 20em;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary);
-  border-radius: 24px;
-}
-
-.second-cards-img {
-  width: 20em;
-  height: max-content;
-}
-
-.second-cards-h2 {
-  padding: 10px 0px;
-  color: #fff;
-  font-family: "Catamaran", sans-serif;
-  /* font-weight: 300; */
-}
-
-.second-cards-btn{
-
-  width: 10em;
-  height: auto;
-  padding: 9px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 0.95em;
-  cursor: pointer;
-  background: rgb(255, 255, 255);
-  opacity: 1;
-  transition: ease-in-out .2s;   
-}
+            </div>
+            <div class="center">
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+            </div>
+        </div>
 
 
+    </section>
+    <footer class="footer"> 
+        <div class="footer-container">
+            <div class="contentfoot"><span>Cloud</span>Kitchen</div>
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Who Are We?</a></li>
+                        <li><a href="#">Our Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Cities </a></li>
+                        <li><a href="#">Restaurant chains</a></li>
+                        <li><a href="#">Privacy</a></li>
+                       
+                    </ul>
+                </div>
+                  <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li class="locate"><a href="#"></a><i class="fa fa-phone"></i> +91 XXXXXXXXXX</li>   
+                        <li class="locate"><a href="#"></a><i class="fa fa-map-pin"></i> add address here</li>   
 
-.second-cards-btn:hover {
-    opacity: 0.7;
-}
-
-.rest-info{
-  min-width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  background-color: var(--bg)
-
-}
-
-.top-rest-container{
-  width: 80vw;
-  /* background-color: #ff7a03; */
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.top-rest {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: left;
-  justify-content: flex-start;
-}
-
-.top-rest span{
-  width: 7rem;
-  height: 1rem;
-  margin: 1rem 3.5rem;
-  color: var(--grey-text);
-  cursor: pointer;
-}
-
-.menu{
-  display: flex;
-}
-
-.center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#myBtn{
-  text-align: center;
-  border: none;
-  padding: .2rem;
-  font-weight: 600;
-  border-radius: 10px;
-  margin-top: 2rem;
-  cursor: pointer;
-}
-
-.dn{
-  display: none;
-}
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com?viewAsMember=true"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com?viewAsMember=true"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com?viewAsMember=true"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="copyrights">
+                <h5>Made with 🤍 by Andrick Silva</h5>
+                <p>© 2022 Cloud-kitchen<p>
+                </div>
+        </div>
+   </footer>
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
 
-/* 640 */
-@media screen and (max-width: 640px) {
-  .cards-container {
-    /* display: flex; */
-    flex-direction: column;
-  }
-}
-/* footer */
-.footer-container{
-  max-width: 1170px;
-  margin:auto;
-}
-
-.contentfoot{
-  font-size: 20px;
-  font-family: "Catamaran", sans-serif;
-  color: white;
-  font-weight: bold;
-  position: relative;
-}
-.contentfoot span{
-  opacity: 0.2;
-  font-size: 26px;
-  position: relative;
-  top: -10%;
-  font-family: Tahoma;
-}
-.row{
-  display: flex;
-  flex-wrap: wrap;
-}
-ul{
-  list-style: none; 
-}
-.footer{
-  background:#282c3f;
-  padding: 10px 0;
-  font-family: "Catamaran", sans-serif;
-}
-.footer-col{
- width: 25%;
- padding: 0 15px;
-}
-.footer-col h4{
-  font-size: 18px;
-  color:#ff7a03;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
-}
-.footer-col h4::before{
-  content: '';
-  position: absolute;
-  left:0;
-  bottom: -10px;
-  background-color: #EDEEF4;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-}
-.footer-col ul li:not(:last-child){
-  margin-bottom: 10px;
-}
-.footer-col ul li a{
-  font-size: 16px;
-  text-transform: capitalize;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 300;
-  color: #bbbbbb;
-  display: block;
-  transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-  color: #ffffff;
-  padding-left: 8px;
-}
-.footer-col .social-links a{
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255,255,255,0.2);
-  margin:0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-  color: #24262b;
-  background-color: #ffffff;
-}
-.locate{
-  color:#bbbbbb;
-}
-.copyrights{
-  display: block;
-  font-size: 18px;
-  color: #bbbbbb;
-  text-align: center;
-}
-
-@media(max-width: 767px){
-.footer-col{
-      width: 50%;
-      margin-bottom: 30px;
-      text-align:center ;
-  }
-  .copyrights{
-      padding-left: 8px;
-  }
-}
-@media(max-width: 574px){
-.footer-col{
-      width: 100%;
-  }
-}
+</html>
