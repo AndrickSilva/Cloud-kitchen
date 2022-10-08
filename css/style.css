@@ -325,6 +325,7 @@
   /* background-color: #ff7a03; */
   margin-right: auto;
   margin-left: auto;
+  
 }
 
 .top-rest {
@@ -374,4 +375,8 @@
     /* display: flex; */
     flex-direction: column;
   }
+}
+a:link{
+  text-decoration: none;
+  display: flex;
 }
