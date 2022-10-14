@@ -14,4 +14,4 @@ Once it is done and there are no required changes then it will be merged and you
 ```
 <br>
 
-<img src="imgs/image.png">
+
