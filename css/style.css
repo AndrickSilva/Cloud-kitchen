@@ -144,6 +144,14 @@
   font-size: 4.125rem;
 }
 
+.Restaurant:hover{
+  background-color: #ffc04d;
+}
+.Cities:hover{
+  color: #ffc04d;
+  box-shadow: var(--orange) 0px 8px 8px;
+}
+
 .first img {
   max-width: 100%;
   height: auto;
@@ -333,7 +341,7 @@
   /* background-color: #ff7a03; */
   margin-right: auto;
   margin-left: auto;
-  
+
 }
 
 .top-rest {
@@ -434,7 +442,7 @@ a:link{
 .footer{
   padding: 40px 0;
   background-color: #fff;
-}  
+}
 .footer .social{
   text-align: center;
   padding-bottom: 25px;
@@ -482,7 +490,7 @@ a:link{
   flex-wrap: wrap;
 }
 ul{
-  list-style: none; 
+  list-style: none;
 }
 .footer{
   background:#282c3f;
@@ -597,4 +605,3 @@ ul{
   font-size: 13px;
   color: #aaa;
 }
-
