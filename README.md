@@ -2,9 +2,9 @@
 
 <!-- ### [Live preview](https://andricksilva.github.io/Cloud-kitchen/) -->
 ```
-Steps to Contribute to this repositorie
+Steps to Contribute to this repository
 ----
-Step 1: Star this repositorie
+Step 1: Star this repository
 Step 2: Open a valid issue
 Step 3: Create pull request
 
