@@ -19,3 +19,20 @@ function myFunction() {
     x.style.display = "flex";
   }
 }
+
+function showhideCities() {
+  var moreCities = document.getElementsByClassName('more-cities');
+  var btn = document.getElementById('myBtn');
+
+  if (btn.innerHTML === 'Read more') {
+    for (let i = 0; i < moreCities.length; i++) {
+      moreCities[i].style.display = 'flex';
+    }
+    btn.innerHTML = 'Read less';
+  } else {
+    for (let i = 0; i < moreCities.length; i++) {
+      moreCities[i].style.display = 'none';
+    }
+    btn.innerHTML = 'Read more';
+  }
+}
