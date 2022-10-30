@@ -44,6 +44,7 @@
   background-color: rgb(243, 242, 253);
   font-family: "Roboto", sans-serif;
   font-size: medium;
+  z-index: 1;
 }
 .nav #myLinks {
   display: block;
