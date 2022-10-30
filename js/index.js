@@ -36,3 +36,23 @@ function showhideCities() {
     btn.innerHTML = 'Read more';
   }
 }
+
+function onPageLoad() {
+  var signUpModal = document.getElementById("signUpModal");
+  var signUpBtn = document.getElementById("sign-up");
+  var closeSignUpModal = document.getElementsByClassName("close")[0];
+  
+  signUpBtn.onclick = function() {
+    signUpModal.style.display = "block";
+  }
+  
+  closeSignUpModal.onclick = function() {
+    signUpModal.style.display = "none";
+  }
+  
+  window.onclick = function(event) {
+    if (event.target == signUpModal) {
+      signUpModal.style.display = "none";
+    }
+  }
+}
