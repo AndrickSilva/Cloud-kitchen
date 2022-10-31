@@ -37,7 +37,7 @@
                 
                 <li><a href="contactus.html">Contact Us</a></li>
 
-                <li class="navHover"><a href="#" style="color: #fff;">Sign In</a></li>
+                <li class="navHover"><a href="#" id="sign-in" style="color: #fff;">Sign In</a></li>
             </ul>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -240,6 +240,23 @@
             
                 <input type="submit" value="Sign Up">
               </form>
+        </div> 
+    </div>
+
+    <!-- Sign in form modal -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="form-h2">Sign In</h2>
+            <form>
+                <label for="email-sign-in">Email</label>
+                <input type="email" id="email-sign-in" name="email" placeholder="Your email" required>
+            
+                <label for="password-sign-in">Password</label>
+                <input type="password" id="password-sign-in" placeholder="Set you password" required minlength="8">
+            
+                <input type="submit" value="Sign In">
+            </form>
         </div> 
     </div>
 

@@ -41,18 +41,33 @@ function onPageLoad() {
   var signUpModal = document.getElementById("signUpModal");
   var signUpBtn = document.getElementById("sign-up");
   var closeSignUpModal = document.getElementsByClassName("close")[0];
+
+  var signInModal = document.getElementById("signInModal");
+  var signInBtn = document.getElementById("sign-in");
+  var closeSignInModal = document.getElementsByClassName("close")[1];
   
   signUpBtn.onclick = function() {
     signUpModal.style.display = "block";
+  }
+
+  signInBtn.onclick = function() {
+    signInModal.style.display = "block";
   }
   
   closeSignUpModal.onclick = function() {
     signUpModal.style.display = "none";
   }
+
+  closeSignInModal.onclick = function() {
+    signInModal.style.display = "none";
+  }
   
   window.onclick = function(event) {
     if (event.target == signUpModal) {
       signUpModal.style.display = "none";
+    }
+    if (event.target == signInModal) {
+      signInModal.style.display = "none";
     }
   }
 }
