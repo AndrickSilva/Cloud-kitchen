@@ -260,6 +260,74 @@
         </div> 
     </div>
 
+<!-- code for scroll to top feature button  --> 
+
+    <a href="#" id="btn-back-to-top" style="display: none;"><span></span></a>
+
+/* scroll to top feature css   */
+#btn-back-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(85, 84, 84, 0.801);
+  text-indent: -9999px;
+  display: none;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+}
+#btn-back-to-top span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #ffffff;
+}
+#btn-back-to-top:hover {
+  background-color: rgb(34, 246, 101);
+  border: rgb(18, 16, 14);
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)";
+}
+
+<script>	
+    //Get the button
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+    scrollFunction();
+    };
+
+    function scrollFunction() {
+    if (
+    document.body.scrollTop > 0 ||
+    document.documentElement.scrollTop > 0
+    ) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+</script>
+
+ <!-- code for scroll to top feature button ends  --> 
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
