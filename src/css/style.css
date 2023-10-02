@@ -283,8 +283,7 @@
 }
 
 .second-cards-container {
-  width: 98vw;
-  height: 70vh;
+
   display: flex;
   justify-content: space-evenly;
   align-items: center;
