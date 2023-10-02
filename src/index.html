@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="assets/favicon.png" type="image/icon type">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="/js/index.js"></script>
+    <script src="/src/js/index.js"></script>
 
     <link href="/dist/output.css" rel="stylesheet">
     <title>Cloud-kitchen - Home</title>
@@ -32,7 +34,7 @@
                 <li><a href="#">Explore</a></li>
 
                 <li><a href="#" id="sign-up">Sign up</a></li>
-                
+
                 <li><a href="contactus.html">Contact Us</a></li>
 
                 <li class="navHover"><a href="#" id="sign-in" style="color: #fff;">Sign In</a></li>
@@ -71,39 +73,90 @@
 
     </div>
 
-    <section class="cards-container">
-        <div class="card" data-aos="zoom-in">
-            <img src="/imgs/thumb up.png" alt="thumb" height="100px" width="100px">
-            <h3 class="card-h3">No Minimum Order</h3>
-            <p class="card-p">Order in for yourself or for the group, with no restrictions on order value</p>
+    <section class="flex justify-between gap-40 p-24">
+        <div data-aos="zoom-in">
+            <div class="hover:scale-110 transition duration-300 ease-out flex flex-col items-center justify-center">
+                <img src="/imgs/thumb up.png" alt="thumb" class="h-24 ">
+                <h3 class="text-xl font-bold pt-3">No Minimum Order</h3>
+                <p class="font-normal text-sm pt-2 text-center">Order in for yourself or for the group, with no
+                    restrictions on order value</p>
+            </div>
         </div>
-        <div class="card" data-aos="zoom-in">
-            <img src="/imgs/tracking.png" alt="thumb" height="100px" width="100px">
-            <h3 class="card-h3">Live Order Tracking</h3>
-            <p class="card-p">Know where your order is at all times, from the restaurant to your doorstep</p>
+        <div data-aos="zoom-in">
+            <div class="hover:scale-110 transition duration-300 ease-out flex flex-col items-center justify-center">
+                <img src="/imgs/tracking.png" alt="thumb" class="h-24 ">
+                <h3 class="text-xl font-bold pt-3">Live Order Tracking</h3>
+                <p class="font-normal text-sm pt-2 text-center">Know where your order is at all times, from the
+                    restaurant to your doorstep</p>
+            </div>
         </div>
-        <div class="card" data-aos="zoom-in">
-            <img src="/imgs/delivery boy.png" alt="thumb" height="100px" width="100px">
-            <h3 class="card-h3">Lightning-Fast Delivery</h3>
-            <p class="card-p">Experience foodie's superfast delivery for food delivered fresh & on time</p>
+        <div data-aos="zoom-in">
+            <div class="hover:scale-110 transition duration-300 ease-out flex flex-col items-center justify-end">
+                <img src="/imgs/delivery boy.png" alt="thumb" class="h-24 ">
+                <h3 class="text-xl font-bold pt-3">Lightning-Fast Delivery</h3>
+                <p class="font-normal text-sm pt-2 text-center">Experience foodie's superfast delivery for food
+                    delivered fresh & on time</p>
+            </div>
         </div>
     </section>
 
     <section class="second-cards-container">
-        <div class="second-cards" data-aos="fade-up" data-aos-duration="1000">
-            <img class="second-cards-img" src="/imgs/card1.jpg" alt="">
-            <h2 class="second-cards-h2">Order food online</h2>
-            <button class="second-cards-btn" type="submit">Order Now</button>
+        <div class="bg-white rounded-lg overflow-hidden w-80 group" data-aos="fade-up" data-aos-duration="1000">
+            <div class="overflow-hidden"><img class="w-full h-56 object-cover group-hover:scale-110 transition duration-300 ease-in" src="/imgs/card1.svg" alt="food"></div>
+            <div class="p-5 flex flex-col gap-2">
+                <h2 class="text-2xl font-bold text-black">Order food online</h2>
+                <p class="w-full text-slate-600"> Enjoy the convenience of delicious meals at your fingertips!
+                </p>
+                <button
+                    class="flex max-w-fit select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-orange-500 transition-all hover:bg-orange-500/10 active:bg-orange-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    Order now
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" aria-hidden="true" class="h-4 w-4">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3">
+                        </path>
+                    </svg>
+                </button>
+            </div>
         </div>
-        <div class="second-cards" data-aos="fade-up" data-aos-duration="1000">
-            <img class="second-cards-img" src="/imgs/card2.png" alt="">
-            <h2 class="second-cards-h2">Go out for a meal</h2>
-            <button class="second-cards-btn" type="submit">Book Now</button>
+        <div class="bg-white rounded-lg overflow-hidden w-80 group" data-aos="fade-up" data-aos-duration="1000">
+            <div class="overflow-hidden"><img class="w-full h-56 object-cover group-hover:scale-110 transition duration-300 ease-in" src="/imgs/card2.svg" alt="food"></div>
+            <div class="p-5 flex flex-col gap-2">
+                <h2 class="text-2xl font-bold text-black">Go out for a meal</h2>
+                <p class="w-full text-slate-600"> Enjoy the convenience of delicious meals at your fingertips!
+                </p>
+                <button
+                    class="flex max-w-fit select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-orange-500 transition-all hover:bg-orange-500/10 active:bg-orange-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    Book now
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" aria-hidden="true" class="h-4 w-4">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3">
+                        </path>
+                    </svg>
+                </button>
+            </div>
         </div>
-        <div class="second-cards" data-aos="fade-up" data-aos-duration="1000">
-            <img class="second-cards-img" src="/imgs/card3.png" alt="">
-            <h2 class="second-cards-h2">Night life & Clubs</h2>
-            <button class="second-cards-btn" type="submit">check Now</button>
+        <div class="bg-white rounded-lg overflow-hidden w-80 group" data-aos="fade-up" data-aos-duration="1000">
+            <div class="overflow-hidden"><img class="w-full h-56 object-cover group-hover:scale-110 transition duration-300 ease-in" src="/imgs/card3.svg" alt="food"></div>
+            <div class="p-5 flex flex-col gap-2">
+                <h2 class="text-2xl font-bold text-black">Night life & Clubs</h2>
+                <p class="w-full text-slate-600"> Enjoy the convenience of delicious meals at your fingertips!
+                </p>
+                <button
+                    class="flex max-w-fit select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-orange-500 transition-all hover:bg-orange-500/10 active:bg-orange-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    check now
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" aria-hidden="true" class="h-4 w-4">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3">
+                        </path>
+                    </svg>
+                </button>
+            </div>
         </div>
     </section>
 
@@ -115,14 +168,15 @@
 
                     <a href="https://www.dominos.co.in/" target="_blank"><span>Dominos</span></a>
                     <a href="https://www.mcdonaldsindia.com/" target="_blank"><span>McDonald’s</span></a>
-                   <a href="https://order.paradisefoodcourt.in/welcome" target="_blank"><span>Paradise Biryani</span></a> 
-                   <a href="https://www.subway.com/en-IN/" target="_blank"><span>Subway</span></a> 
-                   <a href="https://online.kfc.co.in/" target="_blank"> <span>KFC</span></a>
+                    <a href="https://order.paradisefoodcourt.in/welcome" target="_blank"><span>Paradise
+                            Biryani</span></a>
+                    <a href="https://www.subway.com/en-IN/" target="_blank"><span>Subway</span></a>
+                    <a href="https://online.kfc.co.in/" target="_blank"> <span>KFC</span></a>
                 </div>
                 <div class="menu">
 
-                    <a href="https://wowmomos.in/"  target="_blank"><span>WOW! momo</span></a>
-                    <a href="https://dunkinindia.com/"  target="_blank"><span>Dunkin ‘ Donuts</span></a>
+                    <a href="https://wowmomos.in/" target="_blank"><span>WOW! momo</span></a>
+                    <a href="https://dunkinindia.com/" target="_blank"><span>Dunkin ‘ Donuts</span></a>
                     <a href="https://www.eatsure.com/faasos" target="_blank"><span>Faasos</span></a>
                     <a href="https://www.haldirams.com/" target="_blank"><span>Haldiram’s</span></a>
                     <a href="https://www.behrouzbiryani.com/" target="_blank"><span>Behrouz Biryani</span></a>
@@ -171,7 +225,7 @@
         </div>
     </section>
 
-    <footer class="footer"> 
+    <footer class="footer">
         <div class="footer-container">
             <div class="contentfoot"><span>Cloud</span>Kitchen</div>
             <div class="row">
@@ -188,14 +242,14 @@
                         <li><a href="#cities">Cities </a></li>
                         <li><a href="#restaurant-chains">Restaurant chains</a></li>
                         <li><a href="#">Privacy</a></li>
-                       
+
                     </ul>
                 </div>
-                  <div class="footer-col">
+                <div class="footer-col">
                     <h4>Contact Us</h4>
                     <ul>
-                        <li class="locate"><a href="#"></a><i class="fa fa-phone"></i> +91 XXXXXXXXXX</li>   
-                        <li class="locate"><a href="#"></a><i class="fa fa-map-pin"></i> add address here</li>   
+                        <li class="locate"><a href="#"></a><i class="fa fa-phone"></i> +91 XXXXXXXXXX</li>
+                        <li class="locate"><a href="#"></a><i class="fa fa-map-pin"></i> add address here</li>
 
                     </ul>
                 </div>
@@ -207,38 +261,39 @@
                         <a href="https://www.linkedin.com?viewAsMember=true"><i class="fa fa-twitter"></i></a>
                     </div>
                 </div>
-                    </ul>
-                </div>
-                
+                </ul>
             </div>
-            <div class="copyrights">
-                <h5>Made with 🤍 by Andrick Silva</h5>
-                <p>© 2022 Cloud-kitchen<p>
-                </div>
-        </div>
-   </footer>
 
-   <!-- Sign up form modal -->
-   <div id="signUpModal" class="modal">
+        </div>
+        <div class="copyrights">
+            <h5>Made with 🤍 by Andrick Silva</h5>
+            <p>© 2022 Cloud-kitchen
+            <p>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Sign up form modal -->
+    <div id="signUpModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2 class="form-h2">Sign Up</h2>
             <form>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name" required>
-                
+
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Your email" required>
-            
+
                 <label for="phone">Mobile number</label>
                 <input type="number" id="phone" name="phone" placeholder="Mobile number" required>
-            
+
                 <label for="password">Password</label>
                 <input type="password" id="password" placeholder="Set you password" required minlength="8">
-            
+
                 <input type="submit" value="Sign Up">
-              </form>
-        </div> 
+            </form>
+        </div>
     </div>
 
     <!-- Sign in form modal -->
@@ -249,13 +304,13 @@
             <form>
                 <label for="email-sign-in">Email</label>
                 <input type="email" id="email-sign-in" name="email" placeholder="Your email" required>
-            
+
                 <label for="password-sign-in">Password</label>
                 <input type="password" id="password-sign-in" placeholder="Set you password" required minlength="8">
-            
+
                 <input type="submit" value="Sign In">
             </form>
-        </div> 
+        </div>
     </div>
 
 
