@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <nav class="flex justify-between px-24 items-center ">
+    <nav class="flex justify-between px-24 items-center shadow-sm">
         <a href="#"><img src="/imgs/logo.png" class="h-8"></a>
         <ul class="nav2" id="myLinks">
             <li><a href="#">Menu</a></li>
@@ -39,8 +39,8 @@
             </a> -->
     </nav>
 
-    <div class="hero">
-        <div class="bg-[url(/imgs/background.png)] bg-no-repeat w-full bg-cover bg-lightGrey overflow-hidden" data-aos="fade-left" data-aos-duration="1000">
+    <div class="overflow-hidden">
+        <div class="bg-[url(/imgs/background.png)] bg-no-repeat w-full bg-cover bg-lightGrey " data-aos="fade-left" data-aos-duration="1000">
             <div class="flex flex-col gap-10 min-h-screen pt-28 ps-24 items-start">
                 <h2 class="font-bold text-6xl leading-tight" data-aos="fade-up"
                 data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">Never go <br> hungry again!</h2>
@@ -65,7 +65,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <section class="flex justify-between gap-40 p-24">
@@ -206,51 +205,25 @@
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="contentfoot"><span>Cloud</span>Kitchen</div>
-            <div class="row">
-                <div class="footer-col">
-                    <h4>About Us</h4>
-                    <ul>
-                        <li><a href="#">Who Are We?</a></li>
-                        <li><a href="#">Our Blog</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#cities">Cities </a></li>
-                        <li><a href="#restaurant-chains">Restaurant chains</a></li>
-                        <li><a href="#">Privacy</a></li>
-
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li class="locate"><a href="#"></a><i class="fa fa-phone"></i> +91 XXXXXXXXXX</li>
-                        <li class="locate"><a href="#"></a><i class="fa fa-map-pin"></i> add address here</li>
-
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com?viewAsMember=true"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://www.linkedin.com?viewAsMember=true"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com?viewAsMember=true"><i class="fa fa-twitter"></i></a>
-                    </div>
-                </div>
+    <footer class="w-full 300 pt-5 md:p-0 shadow-md">
+        <div class="flex justify-between p-0 md:px-28 items-center flex-col-reverse md:flex-row">
+            <div class="flex justify-around items-center gap-4 py-6 md:gap-6 flex-col-reverse md:flex-row">
+                <img src="/imgs/logo.png" class="logo text-black text-4xl flex items-center font-bold"></img>
+                <div class="rounded-full h-[2px] w-12 md:h-12 md:w-[4px] bg-black"></div>
+                <ul class='flex gap-3 items-center'>
+                    <li class="text-black font-medium hover:font-semibold transition duration-300 ease-out"><a href="#" to="/events">Events</a></li>
+                    <li class="text-black font-medium hover:font-semibold transition duration-300 ease-out"><a href="#" to="/team">Team</a></li>
                 </ul>
             </div>
-
-        </div>
-        <div class="copyrights">
-            <h5>Made with 🤍 by Andrick Silva</h5>
-            <p>© 2022 Cloud-kitchen
-            <p>
-        </div>
+            <div class="flex gap-10">
+                <div class="flex flex-col gap-2">
+                    <ul class='flex gap-6'>
+                        <a href="#" class='hover:scale-110 transition duration-300 ease-out'><i class="text-2xl fa-brands fa-facebook"></i></a>
+                        <a href="#" class='hover:scale-110 transition duration-300 ease-out'><i class="text-2xl fa-brands fa-instagram"></i></a>
+                        <a href="#" class='hover:scale-110 transition duration-300 ease-out'><i class="text-2xl fa-brands fa-twitter"></i></a>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 
