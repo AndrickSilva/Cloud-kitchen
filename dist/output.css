@@ -834,6 +834,14 @@ video {
   width: 100%;
 }
 
+.w-\[38\%\] {
+  width: 38%;
+}
+
+.w-\[37\%\] {
+  width: 37%;
+}
+
 .max-w-fit {
   max-width: -moz-fit-content;
   max-width: fit-content;
